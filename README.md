@@ -1,14 +1,22 @@
-"# Data Analysis & ML Project" 
 # Data Analysis & Machine Learning Pipeline
 
 ## Overview
-This project demonstrates end-to-end data analysis using Python, focusing on data cleaning, exploratory data analysis (EDA), feature engineering, and visualization.
+This project demonstrates end-to-end data analysis using Python, focusing on:
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Revenue analysis
+- Data visualization
+
+---
 
 ## Tools & Technologies
 - Python
 - Pandas
 - Matplotlib
 - Jupyter Notebook
+
+---
 
 ## Key Steps
 - Data loading and inspection
@@ -17,6 +25,29 @@ This project demonstrates end-to-end data analysis using Python, focusing on dat
 - Aggregated analysis by category
 - Data visualization for insights
 
+---
+
+## Example Workflow
+
+```python
+import pandas as pd
+
+df = pd.read_csv("data/sales_data.csv")
+
+df["Date"] = pd.to_datetime(df["Date"])
+
+df["Revenue"] = df["Units_Sold"] * df["Unit_Price"]
+
+print(df.head())
+```
+
+---
+
+## Key Insight
+Revenue varies significantly across product categories, indicating strong category-level performance differences and potential business optimization opportunities.
+
+---
+
 ## How to Run
 
 ```bash
@@ -24,8 +55,7 @@ pip install pandas matplotlib jupyter
 jupyter notebook
 ```
 
-## Key Insight
-Revenue varies significantly across product categories, indicating strong category-level performance differences.
+---
 
 ## Author
 BSc Information Technology Graduate (Data & Software Development Focus)
