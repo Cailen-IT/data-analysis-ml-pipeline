@@ -17,6 +17,13 @@ This project demonstrates end-to-end data analysis using Python, focusing on dat
 - Aggregated analysis by category
 - Data visualization for insights
 
+## How to Run
+
+```bash
+pip install pandas matplotlib jupyter
+jupyter notebook
+```
+
 ## Key Insight
 Revenue varies significantly across product categories, indicating strong category-level performance differences.
 
